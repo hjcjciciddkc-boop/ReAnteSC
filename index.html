@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReAnte SC (リエンテ) | 昭島市を拠点とする社会人サッカーチーム</title>
+    <style>
+        :root {
+            --primary-color: #003366; /* チームメインカラー */
+            --accent-color: #d4af37;  /* ゴールド系のアクセント */
+            --text-main: #333;
+            --text-sub: #666;
+            --bg-light: #fdfdfd;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+        }
+
+        /* ヘッダー・ヒーローエリア */
+        header {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), 
+                        url('https://images.unsplash.com/photo-1510567153573-97817942d057?auto=format&fit=crop&q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 1rem;
+            text-align: center;
+        }
+
+        .team-name {
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin: 0;
+        }
+
+        .reading {
+            font-size: 1.2rem;
+            display: block;
+            margin-top: 0.5rem;
+            letter-spacing: 0.3em;
+            color: var(--accent-color);
+        }
+
+        /* コンテンツエリア */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--accent-color);
+            margin: 10px auto;
+        }
+
+        .lead-text {
+            font-size: 1.1rem;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 3rem;
+        }
+
+        /* チーム概要テーブル */
+        .info-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .info-row {
+            display: flex;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .info-row:last-child { border: none; }
+
+        .label {
+            width: 140px;
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        /* 募集状況の案内（マイルドな表現） */
+        .status-box {
+            background-color: #f8f9fa;
+            border-left: 4px solid #ccc;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .status-msg {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 1rem;
+            font-size: 0.85rem;
+        }
+
+        .footer-logo {
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: block;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero-content">
+        <h1 class="team-name">ReAnte SC</h1>
+        <span class="reading">リエンテ</span>
+        <p style="margin-top: 1.5rem; font-weight: 300;">Akishima City Football Club</p>
+    </div>
+</header>
+
+<div class="container">
+    <section id="about">
+        <h2>About</h2>
+        <p class="lead-text">
+            <strong>ReAnte SC（リエンテ）</strong>は、東京都昭島市を拠点に活動する社会人サッカーチームです。<br><br>
+            私たちはサッカーへの情熱を絶やすことなく、仕事と競技を高いレベルで両立させることを大切にしています。
+            地域に根差し、応援されるチームを目指して、日々真摯にピッチに向き合っています。
+        </p>
+    </section>
+
+    <section id="team-profile">
+        <h2>Team Profile</h2>
+        <div class="info-card">
+            <div class="info-row">
+                <div class="label">ホームタウン</div>
+                <div class="val">東京都昭島市</div>
+            </div>
+            <div class="info-row">
+                <div class="label">主な活動場所</div>
+                <div class="val">昭和公園 陸上競技場、市内各グラウンド</div>
+            </div>
+            <div class="info-row">
+                <div class="label">所属リーグ</div>
+                <div class="val">東京都社会人サッカー連盟</div>
+            </div>
+            <div class="info-row">
+                <div class="label">創設</div>
+                <div class="val">ReAnte SC</div>
+            </div>
+        </div>
+
+        <div class="status-box">
+            <p class="status-msg">
+                <strong>【選手・スタッフ募集について】</strong><br>
+                現在、チーム編成の都合により新規メンバーの募集は行っておりません。<br>
+                再開の際は、こちらのページまたは公式SNSにて改めてお知らせいたします。
+            </p>
+        </div>
+    </section>
+
+    <section id="vision" style="text-align: center;">
+        <h2>Vision</h2>
+        <p>「昭島から、サッカーを通じたコミュニティを。」</p>
+        <p style="font-size: 0.9rem; color: #777;">
+            私たちは、単なる競技チームに留まらず、<br>
+            地域に活力を与える存在でありたいと考えています。
+        </p>
+    </section>
+</div>
+
+<footer>
+    <span class="footer-logo">ReAnte SC</span>
+    <p>&copy; 2026 ReAnte SC All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
